@@ -1,7 +1,8 @@
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: 'Lobster', cursive, sans-serif;
   color: #ffffff;
+  font-weight: 300;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
 
 p {
   color: #ffffff;
+  padding: 1rem;
 }
 .container {
   display: flex;
@@ -43,4 +45,7 @@ p {
   display: flex;
   display: inline;
   text-align: center;
+}
+.pravidla {
+  list-style-type: none;
 }
