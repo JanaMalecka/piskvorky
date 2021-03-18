@@ -1,6 +1,7 @@
 h1 {
   font-size: 32px;
   font-family: 'Lobster', cursive, sans-serif;
+  color: #ffffff;
 }
 
 body {
@@ -10,4 +11,34 @@ body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+p {
+  color: #ffffff;
+}
+.container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-position: center;
+}
+.nazev {
+  display: flex;
+  display: block;
+  text-align: center;
+}
+.image {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  display: inline-block;
+}
+.main {
+  width: 500px;
+  height: 300px;
+  background-color: #283e50;
+  display: flex;
+  display: inline;
+  text-align: center;
 }
