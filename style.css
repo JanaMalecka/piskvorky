@@ -21,7 +21,7 @@ p {
 }
 .container {
   display: flex;
-  position: inherit;
+  position: absolute;
   left: calc(50% - 500px / 2);
   top: calc(50% - 800px / 2);
   flex-direction: column;
@@ -46,6 +46,31 @@ p {
   display: inline;
   text-align: center;
 }
+.tlacitka {
+  display: block;
+}
 .pravidla {
-  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #1fcca4;
+  text-align: center;
+  color: #ffffff;
+  line-height: 2.5rem;
+}
+.pravidla:hover {
+  background-color: #1cbb96;
+}
+.zacithrat {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #0197f6;
+  color: #ffffff;
+  line-height: 2.5rem;
+}
+.zacithrat:hover {
+  background-color: #0090e9;
 }
