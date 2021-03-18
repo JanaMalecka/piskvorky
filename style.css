@@ -37,6 +37,7 @@ p {
   height: 300px;
   display: flex;
   display: inline-block;
+  border-radius: 5px 5px 0px 0px;
 }
 .main {
   width: 500px;
@@ -58,6 +59,7 @@ p {
   text-align: center;
   color: #ffffff;
   line-height: 2.5rem;
+  margin: 0.1rem 0;
 }
 .pravidla:hover {
   background-color: #1cbb96;
@@ -70,6 +72,7 @@ p {
   background-color: #0197f6;
   color: #ffffff;
   line-height: 2.5rem;
+  border-radius: 0px 0px 5px 5px;
 }
 .zacithrat:hover {
   background-color: #0090e9;
