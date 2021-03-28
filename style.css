@@ -72,3 +72,63 @@ p {
 .zacithrat:focus {
   outline: 2px dotted white;
 }
+/*stranka pravidla*/
+
+/* .container__pravidla {
+  min-width: 300px;
+  max-height: 600px;
+  height: auto;
+  margin: 50px auto;
+  background-color: #283e50;
+  border-radius: 5px 5px 0 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem; */
+
+.container__pravidla {
+  width: 300px;
+  height: auto;
+  margin: 50px auto;
+  background-color: #283e50;
+  border-radius: 5px 5px 0 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+}
+
+.heading__pravidla {
+  padding-top: 40px;
+}
+
+li {
+  padding: 0.5rem;
+}
+ol {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+.circle,
+.cross {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+
+figure {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+.uvodnistranka {
+  width: 300px;
+}
+/* .fotogalerie {
+  display: block;
+  width: 10px;
+  height: 10px;
+  width: 300px;
+  height: 180px;
+}
+ */
