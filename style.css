@@ -72,28 +72,31 @@ p {
 .zacithrat:focus {
   outline: 2px dotted white;
 }
+
 /*stranka pravidla*/
 
-/* .container__pravidla {
-  min-width: 300px;
-  max-height: 600px;
-  height: auto;
-  margin: 50px auto;
-  background-color: #283e50;
-  border-radius: 5px 5px 0 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  font-size: 1rem; */
+.rules {
+  color: #ffffff;
+  font-family: serif;
+  background: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  height: 270vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
 .container__pravidla {
-  width: 300px;
+  min-width: 300px;
+  max-width: 50%;
   height: auto;
-  margin: 50px auto;
+  margin: auto;
   background-color: #283e50;
   border-radius: 5px 5px 0 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: 1rem;
+  flex: 1 2 auto;
 }
 
 .heading__pravidla {
@@ -114,21 +117,55 @@ ol {
   height: 1em;
 }
 
-figure {
-  display: flex;
-  flex-flow: column;
+/* 
+zmenila jsem instrukce za figure, nejdriv nastylovat instrukce a pak figure 
+.instrukce {
+  
+} */
+
+/* figure {
   padding: 5px;
-  max-width: 220px;
+  max-width: 100%;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border: 5px solid red;
+  flex-grow: 1 3 auto;
+} */
+
+img {
+  max-width: 300px;
+  max-height: 300px;
 }
-.uvodnistranka {
-  width: 300px;
+
+figcaption {
+  background-color: #283e50;
+  text-align: center;
+  max-width: 300px;
 }
-/* .fotogalerie {
-  display: block;
+/* 
+.container__pravidla {
+  min-width: 300px;
+  max-width: 50%;
+  height: auto;
+  margin: 50px auto;
+  background-color: #283e50;
+  border-radius: 5px 5px 0 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  border: 5px solid red;
+  flex: 1 2 auto;
+} 
+*/
+
+/* .instrukce {
   width: 10px;
   height: 10px;
   width: 300px;
   height: 180px;
-}
- */
+  flex-wrap: wrap;
+  border: 5px solid rgb(0, 255, 42);
+} */
