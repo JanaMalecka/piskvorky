@@ -19,12 +19,6 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-@media (min-width: 360px) {
-  .container {
-    width: 360px;
-  }
-}
-
 .container__image {
   width: 100%;
   border-radius: 5px 5px 0 0;
@@ -44,58 +38,53 @@ p {
   line-height: 1.3;
 }
 
+/* btns pro vsechny stranky*/
+
 .btns {
   display: flex;
   flex-direction: column;
-}
-.btns--pravidla {
-  display: block;
-  background-color: #1fcca4;
-  height: 40px;
   text-decoration: none;
-  color: #ffffff;
-  text-align: center;
   line-height: 2.5rem;
+  color: #ffffff;
+}
+
+.btns--pravidla {
+  background-color: #1fcca4;
+  text-align: center;
   margin: 0.1rem 0;
 }
+
 .btns--pravidla:hover {
   background-color: #1cbb96;
 }
-.btns--pravidla:focus {
-  outline: 2px dotted white;
-}
-.btns--zacithrat {
-  background-color: #0197f6;
-  height: 40px;
-  text-decoration: none;
-  color: #ffffff;
-  text-align: center;
-  line-height: 2.5rem;
-}
-.btns--zacithrat:hover {
-  background-color: #0090e9;
-}
-.btns--zacithrat:focus {
+
+.btns--pravidla:focus,
+.btns--zacithrat:focus,
+.btns--uvodstr:focus {
   outline: 2px dotted white;
 }
 
-.btns--uvodstr {
-  display: block;
-  background-color: #1fcca4;
-  height: 40px;
-  text-decoration: none;
+.btns--zacithrat {
+  background-color: #0197f6;
   color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btns--zacithrat:hover {
+  background-color: #0090e9;
+}
+
+.btns--uvodstr {
+  background-color: #1fcca4;
+  text-decoration: none;
   text-align: center;
   line-height: 2.5rem;
   margin: 0.1rem 0;
-  width: 100%;
 }
 
 .btns--uvodstr:hover {
   background-color: #1cbb96;
-}
-.btns--uvodstr:focus {
-  outline: 2px dotted white;
 }
 
 /*stranka pravidla*/
@@ -107,18 +96,17 @@ p {
   margin: auto;
   background-color: #283e50;
   border-radius: 5px 5px 0 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
   font-size: 1.1rem;
   display: flex;
   flex-direction: column;
 }
 
-.heading__pravidla {
-  padding-top: 40px;
+.container__list {
+  padding-left: 3rem;
 }
+
 li {
-  padding: 0.5rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
 }
 
 .circle,
@@ -129,41 +117,36 @@ li {
 }
 
 .instructions {
-  display: block;
   width: 100%;
-  flex-wrap: wrap;
+  padding: 1rem;
 }
+
 .photo {
   display: block;
   width: 100%;
+  padding-bottom: 1rem;
 }
+
 figure {
-  border: 5px solid red;
-  display: block;
-  width: 100%;
-  margin: auto;
-  padding: 15px;
   align-items: center;
-
-figcaption {
-  background-color: #283e50;
-  text-align: center;
-  max-width: 100%;
-  padding-top: 10px;
-  padding-bottom: 25px;
+  font-style: italic;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 780px) {
   .container__pravidla {
     width: 760px;
-    display: flex;
-  }
-} 
   }
   .instructions {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
+    justify-content: space-evenly;
+  }
+  figure {
+    max-width: 45%;
+    margin: 0 0 20px 0;
   }
 }
-
+figcaption {
+  text-align: center;
+}
