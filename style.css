@@ -150,3 +150,60 @@ figure {
 figcaption {
   text-align: center;
 }
+/* stylovani stranky hra*/
+.container__game {
+  border: 5px solid red;
+  max-width: 80vmin;
+  height: auto;
+  margin: 50px auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.hlavicka {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid blue;
+  margin-bottom: 10px;
+}
+.ikonky {
+  display: flex;
+  flex-direction: row;
+}
+.home {
+  display: flex;
+  background-color: #1fcca4;
+  width: 3rem;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.restart {
+  display: flex;
+  background-color: #0197f6;
+  width: 3rem;
+  padding: 5px;
+  border-radius: 3px;
+}
+.home:hover {
+  background-color: #1cbb96;
+}
+.restart:hover {
+  background-color: #0090e9;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+button {
+  padding: 20px;
+  border: 1px solid black;
+  opacity: 0.4;
+  width: calc(100% / 10);
+}
