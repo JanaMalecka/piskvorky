@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -25,7 +27,7 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'Lobster', cursive;
   font-weight: 300;
   text-align: center;
@@ -152,14 +154,17 @@ figcaption {
 }
 /* stylovani stranky hra*/
 .container__game {
-  border: 5px solid red;
   max-width: 80vmin;
-  height: auto;
   margin: 50px auto;
   font-size: 1.5rem;
   font-weight: 600;
   display: flex;
   flex-direction: column;
+  padding: 0px;
+}
+
+.nadpis2 {
+  margin: 0;
 }
 
 .hlavicka {
@@ -167,7 +172,6 @@ figcaption {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid blue;
   margin-bottom: 10px;
 }
 .ikonky {
@@ -195,15 +199,26 @@ figcaption {
 .restart:hover {
   background-color: #0090e9;
 }
+
 .buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   width: 100%;
-}
-button {
-  padding: 20px;
   border: 1px solid black;
-  opacity: 0.4;
+}
+
+button {
   width: calc(100% / 10);
+  height: 8vmin;
+  opacity: 0.4;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+button:hover,
+button:focus {
+  opacity: 0.6;
 }
