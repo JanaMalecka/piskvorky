@@ -7,7 +7,7 @@
 body {
   min-height: 100vh;
   color: #ffffff;
-  font-family: serif;
+  font-family: sans-serif;
   background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   margin: 0;
@@ -31,6 +31,7 @@ h1 {
   font-family: 'Lobster', cursive;
   font-weight: 300;
   text-align: center;
+  margin-bottom: 0;
 }
 
 p {
@@ -169,8 +170,12 @@ figcaption {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
+.menu__text {
+  padding: 0 0.5rem 0 0;
+  font-family: sans-serif;
+}
+
 .icons {
   display: flex;
   flex-direction: row;
@@ -178,16 +183,16 @@ figcaption {
 .icons-home {
   display: flex;
   background-color: #1fcca4;
-  width: 3rem;
-  padding: 5px;
+  width: 2.5rem;
+  padding: 8px;
   border-radius: 3px;
   margin-right: 10px;
 }
 .icons-restart {
   display: flex;
   background-color: #0197f6;
-  width: 3rem;
-  padding: 5px;
+  width: 2.5rem;
+  padding: 8px;
   border-radius: 3px;
 }
 .icons-home:hover {
