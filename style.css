@@ -234,11 +234,27 @@ button:focus {
   background-image: url(circle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 3em;
+  background-size: 2.5em;
+  animation: extension 0.3s;
 }
 .board__field--cross {
   background-image: url(cross.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 3em;
+  background-size: 2.5em;
+  animation: extension 0.3s;
+  animation-timing-function: ease-out;
+}
+.who-plays {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+@keyframes extension {
+  from {
+    background-size: 30%;
+  }
+  to {
+    background-size: 70%;
+  }
 }
