@@ -214,12 +214,41 @@ figcaption {
 button {
   width: calc(100% / 10);
   height: 8vmin;
-  opacity: 0.4;
+  /*opacity: 0.4;*/
+  background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid black;
   margin: 0;
   padding: 0;
 }
+
+button:nth-child(10n) {
+  flex-grow: 1;
+}
 button:hover,
 button:focus {
   opacity: 0.6;
+}
+/* stylovani hraciho pole*/
+
+.board__field--circle {
+  /*   content: url(circle.svg); */
+  /*   background-image: url(circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%; */
+  /* filter: grayscale(100%);
+  width: 1em;
+  height: 1em;
+  background-size: 2rem; */
+  /*  border: 2px solid red;
+  background-color: red; */
+  /* width: 3.5em;
+  height: 3.5em;
+  filter: url(circle.svg); */
+}
+.board__field--cross {
+  /* background-image: url('cross.svg'); */
+  filter: invert(0%);
+  width: 1em;
+  height: 1em;
 }
