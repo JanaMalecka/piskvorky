@@ -10,12 +10,11 @@ const crossElm = document.querySelector('.cross');
 
 const selectBoardField = (event) => {
   if (move === 'circle') {
-    event.target.classList.add('.board__field--circle');
-    /* event.target.innerHTML = `<img src="circle.svg" alt="kolečko" class="circle" />`; */
+    event.target.classList.add('board__field--circle');
+    /* event.target.innerHTML = `<img src="circle.svg" alt="kolečko" class="circle" />`; //takto bila barva*/
     move = 'cross';
   } else {
-    event.target.classList.add('.board__field--cross');
-    event.target.innerHTML = `<img src="cross.svg" alt="křížek" class="cross">`;
+    event.target.classList.add('board__field--cross');
     move = 'circle';
   }
   event.target.removeEventListener('click', selectBoardField);
