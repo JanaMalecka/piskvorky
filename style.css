@@ -236,13 +236,15 @@ button:focus {
   background-position: center;
   background-size: 2.5em;
   animation: extension 0.3s;
+  animation-timing-function: ease-out;
 }
 .board__field--cross {
   background-image: url(cross.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2.5em;
-  animation: extension 0.3s;
+  animation-name: extension;
+  animation-duration: 0.3s;
   animation-timing-function: ease-out;
 }
 .who-plays {
