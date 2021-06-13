@@ -118,5 +118,66 @@ const isWinningMove = (field) => {
     return true;
   }
 
+  let DiagonallyUpLeftToRight = 1; // Jednička pro právě vybrané políčko
+  // KOUKNI DOPRAVA NAHORU
+  let r = origin.row;
+  let c = origin.column;
+  while (
+    r > 0 &&
+    c < boardSize - 1 &&
+    symbol === getSymbol(getField(r - 1, c + 1))
+  ) {
+    DiagonallyUpLeftToRight += 1;
+    r -= 1;
+    c += 1;
+    console.log(DiagonallyUpLeftToRight);
+  }
+  // KOUKNI DOLEVA DOLŮ
+  r = origin.row;
+  c = origin.column;
+  while (
+    c > 0 &&
+    r < boardSize - 1 &&
+    symbol === getSymbol(getField(r + 1, c - 1))
+  ) {
+    DiagonallyUpLeftToRight += 1;
+    r += 1;
+    c -= 1;
+    console.log(DiagonallyUpLeftToRight);
+  }
+
+  if (DiagonallyUpLeftToRight >= symbolsToWin) {
+    return true;
+  }
+
+  let DiagonallyUpRightToLeft = 1;
+  // KOUKNI DOLEVA NAHORU
+  r = origin.row;
+  c = origin.column;
+  while (r > 0 && c > 0 && symbol === getSymbol(getField(r - 1, c - 1))) {
+    DiagonallyUpRightToLeft += 1;
+    r -= 1;
+    c -= 1;
+    console.log(DiagonallyUpRightToLeft);
+  }
+
+  // KOUKNI DOPRAVA DOLŮ
+  r = origin.row;
+  c = origin.column;
+  while (
+    r < boardSize - 1 &&
+    c < boardSize - 1 &&
+    symbol === getSymbol(getField(r + 1, c + 1))
+  ) {
+    DiagonallyUpRightToLeft += 1;
+    r += 1;
+    c += 1;
+    console.log(DiagonallyUpRightToLeft);
+  }
+
+  if (DiagonallyUpRightToLeft >= symbolsToWin) {
+    return true;
+  }
+
   return false;
 };
